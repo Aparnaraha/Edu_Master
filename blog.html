@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - EduMaster</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>EduMaster</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="courses.html" class="nav-link">Courses</a></li>
+                <li><a href="instructors.html" class="nav-link">Instructors</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="dashboard.html" class="nav-link dashboard-btn">Dashboard</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="header-content">
+                <h1>Our Blog</h1>
+                <p>Stay updated with the latest trends, tips, and insights in technology and education</p>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Blog</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Filters -->
+    <section class="blog-filters">
+        <div class="container">
+            <div class="filters-container">
+                <div class="search-filter">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search articles..." id="blog-search">
+                    </div>
+                </div>
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">All Posts</button>
+                    <button class="filter-btn" data-category="web-dev">Web Development</button>
+                    <button class="filter-btn" data-category="ai-ml">AI & ML</button>
+                    <button class="filter-btn" data-category="career">Career Tips</button>
+                    <button class="filter-btn" data-category="tutorials">Tutorials</button>
+                    <button class="filter-btn" data-category="industry">Industry News</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section class="featured-post">
+        <div class="container">
+            <div class="featured-article">
+                <div class="article-image">
+                    <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Featured Article">
+                    <div class="article-badge">Featured</div>
+                </div>
+                <div class="article-content">
+                    <div class="article-meta">
+                        <span class="category">Web Development</span>
+                        <span class="date">January 15, 2024</span>
+                        <span class="read-time">8 min read</span>
+                    </div>
+                    <h2 class="article-title">The Complete Guide to Modern Web Development in 2024</h2>
+                    <p class="article-excerpt">Discover the latest trends, tools, and frameworks that are shaping the future of web development. From React 18 to Web3 integration, learn what skills you need to stay competitive.</p>
+                    <div class="article-author">
+                        <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=50" alt="Author">
+                        <div class="author-info">
+                            <span class="author-name">John Smith</span>
+                            <span class="author-title">Senior Developer</span>
+                        </div>
+                    </div>
+                    <a href="blog-post.html" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-grid" id="blog-grid">
+                <article class="blog-card" data-category="career">
+                    <div class="blog-image">
+                        <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Career Tips">
+                        <div class="blog-overlay">
+                            <a href="blog-post.html" class="read-more-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="category">Career Tips</span>
+                            <span class="date">January 12, 2024</span>
+                        </div>
+                        <h3 class="blog-title">5 Essential Skills Every Developer Should Master in 2024</h3>
+                        <p class="blog-excerpt">From cloud computing to AI integration, discover the key skills that will make you stand out in the competitive tech industry.</p>
+                        <div class="blog-footer">
+                            <div class="author">
+                                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=40" alt="Author">
+                                <span>Sarah Johnson</span>
+                            </div>
+                            <div class="read-time">
+                                <i class="fas fa-clock"></i>
+                                <span>6 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="tutorials">
+                    <div class="blog-image">
+                        <img src="https://images.pexels.com/photos/3861458/pexels-photo-3861458.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Python Tutorial">
+                        <div class="blog-overlay">
+                            <a href="blog-post.html" class="read-more-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="category">Tutorials</span>
+                            <span class="date">January 10, 2024</span>
+                        </div>
+                        <h3 class="blog-title">Python Data Analysis: From Beginner to Pro</h3>
+                        <p class="blog-excerpt">A comprehensive tutorial on using Python for data analysis, covering pandas, NumPy, and visualization libraries.</p>
+                        <div class="blog-footer">
+                            <div class="author">
+                                <img src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=40" alt="Author">
+                                <span>Dr. Michael Chen</span>
+                            </div>
+                            <div class="read-time">
+                                <i class="fas fa-clock"></i>
+                                <span>12 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="ai-ml">
+                    <div class="blog-image">
+                        <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400" alt="AI Machine Learning">
+                        <div class="blog-overlay">
+                            <a href="blog-post.html" class="read-more-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="category">AI & ML</span>
+                            <span class="date">January 8, 2024</span>
+                        </div>
+                        <h3 class="blog-title">Understanding Neural Networks: A Visual Guide</h3>
+                        <p class="blog-excerpt">Demystify neural networks with clear explanations and visual examples. Perfect for beginners entering the AI field.</p>
+                        <div class="blog-footer">
+                            <div class="author">
+                                <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=40" alt="Author">
+                                <span>Emma Rodriguez</span>
+                            </div>
+                            <div class="read-time">
+                                <i class="fas fa-clock"></i>
+                                <span>10 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="web-dev">
+                    <div class="blog-image">
+                        <img src="https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg?auto=compress&cs=tinysrgb&w=400" alt="React Development">
+                        <div class="blog-overlay">
+                            <a href="blog-post.html" class="read-more-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="category">Web Development</span>
+                            <span class="date">January 5, 2024</span>
+                        </div>
+                        <h3 class="blog-title">React Hooks: Advanced Patterns and Best Practices</h3>
+                        <p class="blog-excerpt">Master advanced React Hooks patterns and learn how to write cleaner, more efficient React components.</p>
+                        <div class="blog-footer">
+                            <div class="author">
+                                <img src="https://images.pexels.com/photos/1181486/pexels-photo-1181486.jpeg?auto=compress&cs=tinysrgb&w=40" alt="Author">
+                                <span>David Park</span>
+                            </div>
+                            <div class="read-time">
+                                <i class="fas fa-clock"></i>
+                                <span>8 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="industry">
+                    <div class="blog-image">
+                        <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Tech Industry">
+                        <div class="blog-overlay">
+                            <a href="blog-post.html" class="read-more-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="category">Industry News</span>
+                            <span class="date">January 3, 2024</span>
+                        </div>
+                        <h3 class="blog-title">The Future of Remote Work in Tech Industry</h3>
+                        <p class="blog-excerpt">Explore how remote work is reshaping the tech industry and what it means for developers and companies.</p>
+                        <div class="blog-footer">
+                            <div class="author">
+                                <img src="https://images.pexels.com/photos/1181567/pexels-photo-1181567.jpeg?auto=compress&cs=tinysrgb&w=40" alt="Author">
+                                <span>Lisa Wong</span>
+                            </div>
+                            <div class="read-time">
+                                <i class="fas fa-clock"></i>
+                                <span>7 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="tutorials">
+                    <div class="blog-image">
+                        <img src="https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=400" alt="CSS Tutorial">
+                        <div class="blog-overlay">
+                            <a href="blog-post.html" class="read-more-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="category">Tutorials</span>
+                            <span class="date">December 28, 2023</span>
+                        </div>
+                        <h3 class="blog-title">CSS Grid vs Flexbox: When to Use Each</h3>
+                        <p class="blog-excerpt">A practical guide to choosing between CSS Grid and Flexbox for your layout needs, with real-world examples.</p>
+                        <div class="blog-footer">
+                            <div class="author">
+                                <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=40" alt="Author">
+                                <span>John Smith</span>
+                            </div>
+                            <div class="read-time">
+                                <i class="fas fa-clock"></i>
+                                <span>9 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button class="btn btn-outline btn-large" id="load-more-btn">
+                    <i class="fas fa-plus"></i>
+                    Load More Articles
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our blog newsletter and never miss the latest articles and insights</p>
+                </div>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>EduMaster</h3>
+                        <p>Empowering learners worldwide with quality education and practical skills.</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Learn</h4>
+                    <ul>
+                        <li><a href="courses.html">All Courses</a></li>
+                        <li><a href="instructors.html">Instructors</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="terms.html">Terms</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="mailto:support@edumaster.com">Email Support</a></li>
+                        <li><a href="https://wa.me/9755536829">WhatsApp</a></li>
+                        <li><a href="#" id="chat-toggle">Live Chat</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EduMaster. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Support Buttons -->
+    <div class="support-buttons">
+        <a href="mailto:support@edumaster.com" class="support-btn email-btn" title="Email Support">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://wa.me/9755536829" class="support-btn whatsapp-btn" title="WhatsApp Support">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <button class="support-btn chat-btn" id="chat-btn" title="Live Chat">
+            <i class="fas fa-comments"></i>
+        </button>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>

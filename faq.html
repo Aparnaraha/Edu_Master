@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - EduMaster</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>EduMaster</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="courses.html" class="nav-link">Courses</a></li>
+                <li><a href="instructors.html" class="nav-link">Instructors</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="dashboard.html" class="nav-link dashboard-btn">Dashboard</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="header-content">
+                <h1>Frequently Asked Questions</h1>
+                <p>Find quick answers to common questions about our platform and courses</p>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>FAQ</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Search -->
+    <section class="faq-search">
+        <div class="container">
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search for answers..." id="faq-search">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Categories -->
+    <section class="faq-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="all">All Questions</button>
+                <button class="category-tab" data-category="courses">Courses</button>
+                <button class="category-tab" data-category="payments">Payments</button>
+                <button class="category-tab" data-category="technical">Technical</button>
+                <button class="category-tab" data-category="certificates">Certificates</button>
+                <button class="category-tab" data-category="account">Account</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="faq-content">
+        <div class="container">
+            <div class="faq-container">
+                <!-- Course Related -->
+                <div class="faq-category" data-category="courses">
+                    <h2>Course Related Questions</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>How do I enroll in a course?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Enrolling in a course is simple! Just browse our course catalog, click on the course you're interested in, and hit the "Enroll Now" button. You'll have instant access to all course materials, including videos, articles, and downloadable resources.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Can I preview course content before enrolling?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes! Most of our courses offer preview videos and free sample lessons. You can also read the detailed course curriculum and reviews from other students to help you make an informed decision.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>What's the difference between course levels?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p><strong>Beginner:</strong> No prior experience required. Starts with basics and fundamentals.<br>
+                                <strong>Intermediate:</strong> Requires some knowledge of the subject. Builds on existing skills.<br>
+                                <strong>Advanced:</strong> For experienced learners looking to master complex concepts and techniques.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>How long do I have access to course content?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Once you enroll in a course, you have lifetime access to all course materials. This includes any future updates, additional content, and new resources that the instructor may add.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Can I download course videos for offline viewing?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes! Our mobile app allows you to download course videos for offline viewing. This is perfect for learning on the go or when you have limited internet connectivity.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payments -->
+                <div class="faq-category" data-category="payments">
+                    <h2>Payment & Refund Questions</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>What payment methods do you accept?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We accept all major credit cards (Visa, MasterCard, American Express), PayPal, Apple Pay, and Google Pay. All transactions are secured with industry-standard encryption.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Do you offer a money-back guarantee?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes! We offer a 30-day money-back guarantee for all our courses. If you're not satisfied with your purchase for any reason, contact our support team within 30 days for a full refund.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Are there any subscription fees?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>No, there are no monthly or yearly subscription fees. You pay once for each course and have lifetime access. We also offer course bundles and occasional promotions for additional savings.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Can I get a receipt for my purchase?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Absolutely! You'll receive an email receipt immediately after your purchase. You can also download receipts anytime from your account dashboard for expense reporting or tax purposes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical -->
+                <div class="faq-category" data-category="technical">
+                    <h2>Technical Support</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>What are the system requirements?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Our platform works on any device with a modern web browser (Chrome, Firefox, Safari, Edge). For the best experience, we recommend a stable internet connection and updated browser. Our mobile app is available for iOS and Android devices.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>I'm having trouble playing videos. What should I do?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>First, try refreshing your browser or switching to a different browser. Check your internet connection and disable any ad blockers that might interfere with video playback. If issues persist, contact our technical support team for assistance.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Can I speed up or slow down video playback?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes! Our video player supports multiple playback speeds from 0.5x to 2x speed. You can also enable captions and adjust video quality based on your internet connection.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Is there a mobile app available?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes! Our mobile app is available for both iOS and Android devices. The app includes all the features of our web platform plus offline viewing capabilities for downloaded content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificates -->
+                <div class="faq-category" data-category="certificates">
+                    <h2>Certificates & Completion</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Do I get a certificate when I complete a course?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes! Upon completing all course requirements, you'll receive a certificate of completion. The certificate includes your name, the course title, completion date, and instructor signature.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Are certificates accredited or recognized by employers?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Our certificates demonstrate your commitment to learning and skill development. While not formally accredited, many employers recognize and value online learning certificates, especially when combined with practical project work.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Can I add my certificate to LinkedIn?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Absolutely! Our certificates are designed to be easily shared on professional networks like LinkedIn. You can download a high-quality PDF or share directly from your dashboard.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>What if I lose my certificate?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>No worries! All your certificates are permanently stored in your account dashboard. You can download or re-share them anytime, even years after completion.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Account -->
+                <div class="faq-category" data-category="account">
+                    <h2>Account Management</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>How do I reset my password?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Click on the "Forgot Password" link on the login page. Enter your email address, and we'll send you a secure link to reset your password. Make sure to check your spam folder if you don't see the email.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Can I change my email address?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes! Go to your account settings and update your email address. You'll need to verify the new email address before the change takes effect. All your course progress and certificates will remain linked to your account.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>How do I delete my account?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>If you wish to delete your account, please contact our support team. Note that deleting your account will permanently remove access to all purchased courses and certificates, and this action cannot be undone.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Can I share my account with family members?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Each account is intended for individual use to ensure proper progress tracking and certificate validity. However, we offer family plans and group discounts for multiple learners. Contact us for more information.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Still Need Help -->
+    <section class="help-section">
+        <div class="container">
+            <div class="help-content">
+                <h2>Still Need Help?</h2>
+                <p>Can't find the answer you're looking for? Our support team is here to help!</p>
+                <div class="help-options">
+                    <a href="contact.html" class="btn btn-primary">Contact Support</a>
+                    <button class="btn btn-outline" id="help-chat-btn">Live Chat</button>
+                    <a href="mailto:support@edumaster.com" class="btn btn-outline">Email Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>EduMaster</h3>
+                        <p>Empowering learners worldwide with quality education and practical skills.</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Learn</h4>
+                    <ul>
+                        <li><a href="courses.html">All Courses</a></li>
+                        <li><a href="instructors.html">Instructors</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="terms.html">Terms</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="mailto:support@edumaster.com">Email Support</a></li>
+                        <li><a href="https://wa.me/9755536829">WhatsApp</a></li>
+                        <li><a href="#" id="chat-toggle">Live Chat</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EduMaster. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Support Buttons -->
+    <div class="support-buttons">
+        <a href="mailto:support@edumaster.com" class="support-btn email-btn" title="Email Support">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://wa.me/9755536829" class="support-btn whatsapp-btn" title="WhatsApp Support">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <button class="support-btn chat-btn" id="chat-btn" title="Live Chat">
+            <i class="fas fa-comments"></i>
+        </button>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/faq.js"></script>
+</body>
+</html>

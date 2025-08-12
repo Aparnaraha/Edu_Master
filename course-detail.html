@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete JavaScript Mastery - EduMaster</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>EduMaster</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="courses.html" class="nav-link">Courses</a></li>
+                <li><a href="instructors.html" class="nav-link">Instructors</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="dashboard.html" class="nav-link dashboard-btn">Dashboard</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Course Hero -->
+    <section class="course-hero">
+        <div class="container">
+            <div class="course-hero-content">
+                <div class="course-info">
+                    <div class="breadcrumb">
+                        <a href="index.html">Home</a>
+                        <i class="fas fa-chevron-right"></i>
+                        <a href="courses.html">Courses</a>
+                        <i class="fas fa-chevron-right"></i>
+                        <span>JavaScript Mastery</span>
+                    </div>
+                    <div class="course-badges">
+                        <span class="badge bestseller">Bestseller</span>
+                        <span class="badge updated">Recently Updated</span>
+                    </div>
+                    <h1 class="course-title">Complete JavaScript Mastery</h1>
+                    <p class="course-subtitle">Master JavaScript from basics to advanced concepts with real-world projects and industry best practices</p>
+                    <div class="course-meta">
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">4.9 (15,234 ratings)</span>
+                        </div>
+                        <div class="students-count">
+                            <i class="fas fa-users"></i>
+                            <span>45,678 students</span>
+                        </div>
+                    </div>
+                    <div class="instructor-info">
+                        <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=60" alt="John Smith">
+                        <div class="instructor-details">
+                            <span class="instructor-name">Created by John Smith</span>
+                            <span class="instructor-title">Senior Full Stack Developer</span>
+                        </div>
+                    </div>
+                    <div class="course-stats">
+                        <div class="stat">
+                            <i class="fas fa-clock"></i>
+                            <span>40 hours on-demand video</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-file-alt"></i>
+                            <span>50 articles</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-download"></i>
+                            <span>30 downloadable resources</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificate of completion</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-preview">
+                    <div class="preview-container">
+                        <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Course Preview">
+                        <button class="play-preview" id="play-preview">
+                            <i class="fas fa-play"></i>
+                            <span>Preview Course</span>
+                        </button>
+                    </div>
+                    <div class="pricing-card">
+                        <div class="price">
+                            <span class="current-price">$99</span>
+                            <span class="original-price">$199</span>
+                            <span class="discount">50% off</span>
+                        </div>
+                        <button class="btn btn-primary btn-large enroll-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Enroll Now
+                        </button>
+                        <button class="btn btn-outline btn-large wishlist-btn">
+                            <i class="fas fa-heart"></i>
+                            Add to Wishlist
+                        </button>
+                        <div class="guarantee">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>30-day money-back guarantee</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Content Tabs -->
+    <section class="course-content">
+        <div class="container">
+            <div class="content-tabs">
+                <button class="tab-btn active" data-tab="curriculum">
+                    <i class="fas fa-list"></i>
+                    Curriculum
+                </button>
+                <button class="tab-btn" data-tab="reviews">
+                    <i class="fas fa-star"></i>
+                    Reviews
+                </button>
+                <button class="tab-btn" data-tab="instructor">
+                    <i class="fas fa-user"></i>
+                    Instructor
+                </button>
+                <button class="tab-btn" data-tab="faq">
+                    <i class="fas fa-question-circle"></i>
+                    FAQ
+                </button>
+            </div>
+
+            <div class="tab-content">
+                <!-- Curriculum Tab -->
+                <div class="tab-panel active" id="curriculum">
+                    <div class="curriculum-container">
+                        <div class="curriculum-overview">
+                            <h3>Course Content</h3>
+                            <div class="overview-stats">
+                                <span>12 sections</span>
+                                <span>•</span>
+                                <span>120 lectures</span>
+                                <span>•</span>
+                                <span>40h 15m total length</span>
+                            </div>
+                        </div>
+                        <div class="curriculum-sections" id="curriculum-sections">
+                            <div class="section">
+                                <div class="section-header">
+                                    <button class="section-toggle">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <h4>Section 1: JavaScript Fundamentals</h4>
+                                    <span class="section-info">8 lectures • 2h 30m</span>
+                                </div>
+                                <div class="section-content">
+                                    <div class="lecture">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span class="lecture-title">Introduction to JavaScript</span>
+                                        <span class="lecture-duration">15:30</span>
+                                    </div>
+                                    <div class="lecture">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span class="lecture-title">Variables and Data Types</span>
+                                        <span class="lecture-duration">22:45</span>
+                                    </div>
+                                    <div class="lecture">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span class="lecture-title">Operators and Expressions</span>
+                                        <span class="lecture-duration">18:20</span>
+                                    </div>
+                                    <div class="lecture">
+                                        <i class="fas fa-file-alt"></i>
+                                        <span class="lecture-title">Practice Exercise: Basic Operations</span>
+                                        <span class="lecture-duration">Quiz</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section">
+                                <div class="section-header">
+                                    <button class="section-toggle">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <h4>Section 2: Control Structures</h4>
+                                    <span class="section-info">10 lectures • 3h 15m</span>
+                                </div>
+                                <div class="section-content">
+                                    <div class="lecture">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span class="lecture-title">If Statements and Conditionals</span>
+                                        <span class="lecture-duration">20:30</span>
+                                    </div>
+                                    <div class="lecture">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span class="lecture-title">Loops and Iterations</span>
+                                        <span class="lecture-duration">25:15</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reviews Tab -->
+                <div class="tab-panel" id="reviews">
+                    <div class="reviews-container">
+                        <div class="reviews-summary">
+                            <div class="rating-overview">
+                                <div class="overall-rating">
+                                    <span class="rating-number">4.9</span>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="rating-count">15,234 ratings</span>
+                                </div>
+                                <div class="rating-breakdown">
+                                    <div class="rating-bar">
+                                        <span>5 stars</span>
+                                        <div class="bar">
+                                            <div class="fill" style="width: 85%"></div>
+                                        </div>
+                                        <span>85%</span>
+                                    </div>
+                                    <div class="rating-bar">
+                                        <span>4 stars</span>
+                                        <div class="bar">
+                                            <div class="fill" style="width: 12%"></div>
+                                        </div>
+                                        <span>12%</span>
+                                    </div>
+                                    <div class="rating-bar">
+                                        <span>3 stars</span>
+                                        <div class="bar">
+                                            <div class="fill" style="width: 2%"></div>
+                                        </div>
+                                        <span>2%</span>
+                                    </div>
+                                    <div class="rating-bar">
+                                        <span>2 stars</span>
+                                        <div class="bar">
+                                            <div class="fill" style="width: 1%"></div>
+                                        </div>
+                                        <span>1%</span>
+                                    </div>
+                                    <div class="rating-bar">
+                                        <span>1 star</span>
+                                        <div class="bar">
+                                            <div class="fill" style="width: 0%"></div>
+                                        </div>
+                                        <span>0%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-list">
+                            <div class="review">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=50" alt="Reviewer">
+                                        <div class="reviewer-details">
+                                            <h4>Alex Rodriguez</h4>
+                                            <span class="review-date">2 weeks ago</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-rating">
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="review-text">This course is absolutely fantastic! John explains everything clearly and the projects are really practical. I've learned so much and feel confident using JavaScript now.</p>
+                                <div class="review-actions">
+                                    <button class="helpful-btn">
+                                        <i class="fas fa-thumbs-up"></i>
+                                        Helpful (42)
+                                    </button>
+                                    <button class="report-btn">
+                                        <i class="fas fa-flag"></i>
+                                        Report
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instructor Tab -->
+                <div class="tab-panel" id="instructor">
+                    <div class="instructor-profile">
+                        <div class="instructor-header">
+                            <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=120" alt="John Smith">
+                            <div class="instructor-info">
+                                <h3>John Smith</h3>
+                                <p class="instructor-title">Senior Full Stack Developer & Course Creator</p>
+                                <div class="instructor-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-star"></i>
+                                        <span>4.9 Instructor Rating</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-users"></i>
+                                        <span>125,000+ Students</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>15 Courses</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="instructor-bio">
+                            <h4>About John</h4>
+                            <p>John is a passionate educator and experienced developer with over 10 years in the industry. He has worked at top tech companies including Google and Microsoft, and has taught over 125,000 students worldwide.</p>
+                            <p>His expertise spans across modern web technologies, and he's known for his clear teaching style and practical approach to coding education.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Tab -->
+                <div class="tab-panel" id="faq">
+                    <div class="faq-container">
+                        <h3>Frequently Asked Questions</h3>
+                        <div class="faq-list">
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>What are the prerequisites for this course?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>No prior programming experience is required. Basic computer literacy and willingness to learn are all you need to get started.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>How long do I have access to the course?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>You get lifetime access to the course content, including all future updates and additions.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>Is there a certificate upon completion?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Yes, you'll receive a certificate of completion that you can add to your LinkedIn profile or resume.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Courses -->
+    <section class="related-courses">
+        <div class="container">
+            <h3>Students Also Bought</h3>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=300" alt="React Course">
+                    </div>
+                    <div class="course-content">
+                        <h4>React Complete Guide</h4>
+                        <div class="course-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>4.8 (1,856)</span>
+                        </div>
+                        <div class="course-price">
+                            <span class="current-price">$89</span>
+                            <span class="original-price">$179</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>EduMaster</h3>
+                        <p>Empowering learners worldwide with quality education and practical skills.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EduMaster. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/course-detail.js"></script>
+</body>
+</html>

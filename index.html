@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduMaster - Learn, Grow, Excel</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>EduMaster</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="courses.html" class="nav-link">Courses</a></li>
+                <li><a href="instructors.html" class="nav-link">Instructors</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="dashboard.html" class="nav-link dashboard-btn">Dashboard</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Master Skills in 
+                        <span class="typing-text" id="typing-text"></span>
+                    </h1>
+                    <p class="hero-subtitle fade-in-up">
+                        Join thousands of students learning from world-class instructors. 
+                        Build your career with our premium courses and expert guidance.
+                    </p>
+                    <div class="hero-buttons fade-in-up">
+                        <a href="courses.html" class="btn btn-primary btn-large">
+                            <i class="fas fa-play"></i>
+                            Start Learning
+                        </a>
+                        <a href="#features" class="btn btn-outline btn-large">
+                            <i class="fas fa-info-circle"></i>
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-video-container">
+                        <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Students learning" class="hero-img">
+                        <div class="play-button" id="hero-play-btn">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="floating-cards">
+                        <div class="floating-card card-1">
+                            <i class="fas fa-code"></i>
+                            <span>Web Development</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-robot"></i>
+                            <span>AI & Machine Learning</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Data Science</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="What do you want to learn today?" id="search-input">
+                    <button class="search-btn">Search</button>
+                </div>
+                <div class="popular-searches">
+                    <span>Popular:</span>
+                    <a href="#" class="search-tag">JavaScript</a>
+                    <a href="#" class="search-tag">Python</a>
+                    <a href="#" class="search-tag">React</a>
+                    <a href="#" class="search-tag">Machine Learning</a>
+                    <a href="#" class="search-tag">UI/UX Design</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Browse by Category</h2>
+                <p class="section-subtitle">Explore our wide range of courses across different domains</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card" data-category="web-dev">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, JavaScript, React, Node.js</p>
+                    <span class="course-count">150+ Courses</span>
+                </div>
+                <div class="category-card" data-category="mobile">
+                    <div class="category-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <p>iOS, Android, React Native, Flutter</p>
+                    <span class="course-count">80+ Courses</span>
+                </div>
+                <div class="category-card" data-category="ai-ml">
+                    <div class="category-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Python, TensorFlow, Deep Learning</p>
+                    <span class="course-count">120+ Courses</span>
+                </div>
+                <div class="category-card" data-category="data-science">
+                    <div class="category-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Data Science</h3>
+                    <p>Analytics, Visualization, Statistics</p>
+                    <span class="course-count">95+ Courses</span>
+                </div>
+                <div class="category-card" data-category="design">
+                    <div class="category-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Design</h3>
+                    <p>UI/UX, Graphic Design, Figma</p>
+                    <span class="course-count">110+ Courses</span>
+                </div>
+                <div class="category-card" data-category="business">
+                    <div class="category-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Business</h3>
+                    <p>Marketing, Finance, Management</p>
+                    <span class="course-count">200+ Courses</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Courses -->
+    <section class="featured-courses" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Courses</h2>
+                <p class="section-subtitle">Hand-picked courses by our experts</p>
+            </div>
+            <div class="courses-slider">
+                <div class="slider-container" id="courses-slider">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=400" alt="JavaScript Course">
+                            <div class="course-overlay">
+                                <button class="preview-btn" data-video="javascript-preview">
+                                    <i class="fas fa-play"></i>
+                                    Preview
+                                </button>
+                            </div>
+                            <div class="course-badge">Bestseller</div>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-meta">
+                                <span class="course-category">Web Development</span>
+                                <div class="course-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span>4.9 (2,340)</span>
+                                </div>
+                            </div>
+                            <h3 class="course-title">Complete JavaScript Mastery</h3>
+                            <p class="course-description">Master JavaScript from basics to advanced concepts with real-world projects</p>
+                            <div class="course-instructor">
+                                <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=50" alt="Instructor">
+                                <span>John Smith</span>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-stats">
+                                    <span><i class="fas fa-clock"></i> 40h</span>
+                                    <span><i class="fas fa-users"></i> 15,234</span>
+                                </div>
+                                <div class="course-price">
+                                    <span class="original-price">$199</span>
+                                    <span class="current-price">$99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=400" alt="React Course">
+                            <div class="course-overlay">
+                                <button class="preview-btn" data-video="react-preview">
+                                    <i class="fas fa-play"></i>
+                                    Preview
+                                </button>
+                            </div>
+                            <div class="course-badge">New</div>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-meta">
+                                <span class="course-category">Frontend</span>
+                                <div class="course-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span>4.8 (1,856)</span>
+                                </div>
+                            </div>
+                            <h3 class="course-title">React Complete Guide 2024</h3>
+                            <p class="course-description">Build modern web applications with React, Redux, and TypeScript</p>
+                            <div class="course-instructor">
+                                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=50" alt="Instructor">
+                                <span>Sarah Johnson</span>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-stats">
+                                    <span><i class="fas fa-clock"></i> 35h</span>
+                                    <span><i class="fas fa-users"></i> 8,945</span>
+                                </div>
+                                <div class="course-price">
+                                    <span class="original-price">$179</span>
+                                    <span class="current-price">$89</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://images.pexels.com/photos/3861458/pexels-photo-3861458.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Python Course">
+                            <div class="course-overlay">
+                                <button class="preview-btn" data-video="python-preview">
+                                    <i class="fas fa-play"></i>
+                                    Preview
+                                </button>
+                            </div>
+                            <div class="course-badge">Popular</div>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-meta">
+                                <span class="course-category">Programming</span>
+                                <div class="course-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span>4.9 (3,127)</span>
+                                </div>
+                            </div>
+                            <h3 class="course-title">Python for Data Science</h3>
+                            <p class="course-description">Learn Python programming and data analysis with pandas, NumPy, and more</p>
+                            <div class="course-instructor">
+                                <img src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=50" alt="Instructor">
+                                <span>Dr. Michael Chen</span>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-stats">
+                                    <span><i class="fas fa-clock"></i> 50h</span>
+                                    <span><i class="fas fa-users"></i> 12,678</span>
+                                </div>
+                                <div class="course-price">
+                                    <span class="original-price">$229</span>
+                                    <span class="current-price">$119</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn" id="prev-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-btn next-btn" id="next-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50000">0</div>
+                    <div class="stat-label">Students</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="1000">0</div>
+                    <div class="stat-label">Courses</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="150">0</div>
+                    <div class="stat-label">Instructors</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="95">0</div>
+                    <div class="stat-label">Success Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Students Say</h2>
+                <p class="section-subtitle">Real feedback from our amazing community</p>
+            </div>
+            <div class="testimonials-slider" id="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "EduMaster transformed my career completely. The instructors are world-class and the content is always up-to-date. I landed my dream job thanks to the skills I learned here."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=80" alt="Student">
+                            <div class="author-info">
+                                <h4>Alex Rodriguez</h4>
+                                <span>Full Stack Developer at Google</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "The interactive learning approach and hands-on projects made all the difference. I went from complete beginner to confident developer in just 6 months."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=80" alt="Student">
+                            <div class="author-info">
+                                <h4>Emma Thompson</h4>
+                                <span>Frontend Developer at Meta</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Amazing platform with excellent support. The community is incredibly helpful and the course quality is unmatched. Highly recommend!"
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=80" alt="Student">
+                            <div class="author-info">
+                                <h4>David Park</h4>
+                                <span>Data Scientist at Netflix</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3>Stay Updated</h3>
+                    <p>Get the latest courses, tips, and industry insights delivered to your inbox</p>
+                </div>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>EduMaster</h3>
+                        <p>Empowering learners worldwide with quality education and practical skills.</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Learn</h4>
+                    <ul>
+                        <li><a href="courses.html">All Courses</a></li>
+                        <li><a href="instructors.html">Instructors</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="terms.html">Terms</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="mailto:support@edumaster.com">Email Support</a></li>
+                        <li><a href="https://wa.me/9755536829">WhatsApp</a></li>
+                        <li><a href="#" id="chat-toggle">Live Chat</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EduMaster. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="video-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="video-container">
+                <iframe id="video-iframe" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chat-widget">
+        <div class="chat-header">
+            <div class="chat-avatar">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <div class="chat-info">
+                <h4>Support Chat</h4>
+                <span class="online-status">Online</span>
+            </div>
+            <button class="chat-minimize" id="chat-minimize">
+                <i class="fas fa-minus"></i>
+            </button>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="message bot-message">
+                <div class="message-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="message-content">
+                    <p>Hi! How can I help you today?</p>
+                    <span class="message-time">Just now</span>
+                </div>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Type your message..." id="chat-input">
+            <button id="send-message">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Support Buttons -->
+    <div class="support-buttons">
+        <a href="mailto:support@edumaster.com" class="support-btn email-btn" title="Email Support">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://wa.me/9755536829" class="support-btn whatsapp-btn" title="WhatsApp Support">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <button class="support-btn chat-btn" id="chat-btn" title="Live Chat">
+            <i class="fas fa-comments"></i>
+        </button>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html>
